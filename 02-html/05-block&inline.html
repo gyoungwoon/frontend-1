@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block & Inline | Html</title>
+    <style>
+      /* #.id | .class | id의 우선순위가 더 높음 */
+      /* id는 하나, class는 여러개 지정 가능 */
+      #blueviolet {
+        background-color: blueviolet;
+      }
+      #red {
+        background-color: red;
+      }
+      .blueviolet {
+        background-color: blueviolet;
+      }
+      .red {
+        background-color: red;
+      }
+      .aqua {
+        background-color: aqua;
+      }
+      .aquamarine {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>html</h1>
+    <h2>block & inline</h2>
+
+    <!-- block : 블럭요소, 아래로 배치 -->
+    <div id="blueviolet" class="blueviolet">div block</div>
+    <div id="red" class="red">div block</div>
+
+    <!-- inline : 옆으로 배치 -->
+    <span class="aqua">span block</span>
+    <span class="aquamarine">span block</span>
+  </body>
+</html>
