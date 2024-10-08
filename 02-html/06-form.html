@@ -13,10 +13,66 @@
       <fieldset>
         <legend>회원가입</legend>
         <label for="id">아이디</label>
-        <input type="text" id="id" name="id" />
+        <input type="text" id="id" name="id" title="아이디" placeholder="영어 아이디만 가능합니다." maxlength="16" />
+
         <br />
         <label for="pw">비밀번호</label>
-        <input type="password" id="pw" name="pw" />
+        <input type="password" id="pw" name="pw" placeholder="8자리 이상, 특수문자 포함" />
+
+        <hr />
+
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" value="김성현" readonly disabled />
+
+        <hr />
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" />
+
+        <hr />
+        <label for="file">첨부파일</label>
+        <input type="file" name="file" id="file" />
+
+        <hr />
+        <label for="search">검색</label>
+        <input type="search" name="search" id="search" />
+
+        <hr />
+        <label for="tel">전화번호</label>
+        <input type="tel" name="tel" id="tel" size="10" placeholder="010-1234-5678" />
+
+        <hr />
+        <label for="animals">좋아하는동물</label>
+        <select name="animals" id="animals">
+          <option value="cat">cat</option>
+          <option value="dog">dog</option>
+          <option value="fish" selected>fish</option>
+        </select>
+
+        <hr />
+        <label for="text">남기고 싶은 말</label>
+        <textarea name="text" id="text" rows="10"></textarea>
+
+        <hr />
+        <button>버튼</button>
+        <input type="button" value="버튼" />
+
+        <hr />
+        <input type="radio" name="gender" id="m" />
+        <label for="m">남자</label>
+        <input type="radio" name="gender" id="f" />
+        <label for="f">여자</label>
+
+        <hr />
+        <input type="checkbox" name="cat" id="cat" />
+        <label for="cat">고양이</label>
+        <input type="checkbox" name="dog" id="dog" />
+        <label for="dog">강아지</label>
+        <input type="checkbox" name="fish" id="fish" />
+        <label for="fish">물고기</label>
+
+        <hr />
+        <input type="reset" value="취소" />
+        <input type="submit" value="회원가입" />
       </fieldset>
     </form>
   </body>
